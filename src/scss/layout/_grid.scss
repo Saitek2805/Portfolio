@@ -1,0 +1,23 @@
+//* _grid.scss */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $padding / 2; // Dividimos el valor de $padding por 2
+  }
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$padding / 2;
+     .col {
+      flex: 1;
+      padding: $padding / 2;
+    }
+     .col-6 {
+      width: 50%;
+    }
+     .col-4 {
+      width: 33.33%;
+    }
+  }
+ 

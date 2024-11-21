@@ -1,0 +1,48 @@
+// footer.scss
+// footer.scss
+
+
+footer {
+    width: 100%; // Ocupar el ancho completo
+     // Mantener el fondo basado en la variable de tema
+    background-color: var(--body-bg);
+    color: var(--text-color); // Color de texto basado en el tema
+     padding: 2rem 0; // Espaciado vertical
+     // Añadir una sombra sutil para diferenciar del contenido principal
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); // Sombra superior para destacar el footer
+     .container {
+      padding: 0 1rem; // Espaciado interno del contenedor
+       p {
+        margin-bottom: 1rem; // Separación entre párrafos para mejorar la legibilidad
+         a {
+          color: var(--primary-light); // Enlaces con el color principal del tema
+           &:hover {
+            color: var(--secondary-light); // Cambiar el color al secundario en hover
+            text-decoration: underline; // Subrayado en hover para indicar interactividad
+          }
+        }
+         &.float-end {
+          text-align: right; // Alinear el texto a la derecha para un diseño más limpio
+           a {
+            font-weight: bold; // Enlace "Volver arriba" más destacado
+            font-size: 0.9rem; // Tamaño ligeramente más pequeño para un estilo refinado
+             &:hover {
+              transform: translateY(-2px); // Efecto de desplazamiento sutil hacia arriba al pasar el cursor
+              color: var(--primary-light); // Mantener el color principal en hover
+            }
+          }
+        }
+      }
+    }
+     // Estilo adicional para el espaciado en dispositivos pequeños
+    @media (max-width: 576px) {
+      .container {
+        padding: 1rem 0.5rem; // Reducir padding en pantallas pequeñas para mejor ajuste
+      }
+       p.float-end {
+        text-align: center; // Centrar el enlace "Volver arriba" en pantallas pequeñas
+        margin-bottom: 1.5rem; // Añadir espacio adicional debajo para evitar superposiciones
+      }
+    }
+  }
+ 

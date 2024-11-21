@@ -1,0 +1,19 @@
+/* _mixins.scss */
+// Mixin para estilos de botones
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+     &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+     &.active {
+      background-color: lighten($bg-color, 10%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+     &.disabled {
+      background-color: gray;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+ 

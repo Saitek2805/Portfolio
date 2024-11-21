@@ -1,0 +1,44 @@
+// cards.scss
+.card {
+  border: none; // Eliminar el borde predeterminado para un diseño más limpio
+  border-radius: 10px; // Bordes redondeados suaves para las tarjetas
+  overflow: hidden; // Asegurar que los contenidos no se desborden en las esquinas redondeadas
+   // Fondo y sombra para mejorar la profundidad visual
+  background-color: var(--bs-card-bg, #ffffff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   .card-img-top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); // Separar visualmente la imagen del contenido
+  }
+   .card-body {
+    padding: 1.5rem; // Espaciado interno
+    background-color: var(--bs-body-bg); // Fondo basado en el tema
+     .card-text {
+      color: var(--bs-body-color); // Color del texto basado en el tema
+    }
+     .btn-group {
+      .btn {
+        border-radius: 5px; // Bordes suavemente redondeados para los botones
+        transition: background-color 0.3s ease, transform 0.3s ease; // Efecto de transición suave
+         &:hover {
+          transform: translateY(-2px); // Efecto de elevación
+        }
+      }
+    }
+     small.text-muted {
+      color: var(--bs-muted-text, #6c757d); // Color de texto claro para fechas
+    }
+  }
+   // Configuraciones para el modo oscuro
+  [data-bs-theme="dark"] & {
+    background-color: var(--bs-dark-bg, #2a2a2a); // Fondo oscuro para las tarjetas en modo oscuro
+    .card-body {
+      background-color: var(--bs-dark-bg, #2a2a2a);
+    }
+    .card-text {
+      color: var(--bs-light-color, #eaeaea); // Texto claro
+    }
+    small.text-muted {
+      color: var(--bs-dark-muted-text, #999999); // Color de texto tenue para detalles menores
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// header.scss
+
+
+header {
+  .navbar {
+    // Añade una sombra  para el navbar para dar sensación de profundidad.
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+ 
+    .navbar-brand {
+      // Aumenta el grosor de la fuente para la marca del navbar
+      font-weight: bold;
+     
+      // Establece un tamaño de fuente mayor para la marca
+      font-size: 1.25rem;
+       // Define el color del texto basado en una variable CSS, que se ajusta según el tema.
+      color: var(--text-color);
+    }
+ 
+    .navbar-toggler {
+      // Quita el borde del botón del menú para mantener un diseño limpio.
+      border: none;
+       // Añade una transición suave al transformarse
+      transition: transform 0.3s ease;
+     
+      // Define un efecto de hover, aumentando ligeramente el tamaño del botón para dar una sensación de interactividad.
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Formulario de pago · Bootstrap v5.0</title>
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Portfolio de Keiner Hurtado - DAW</a>
+        <div class="d-flex">
+          <button id="themeToggle" class="btn btn-outline-primary me-2">
+            <i class="bi bi-sun" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="py-5 text-center">
+      <h2>Formulario de Pago</h2>
+      <p class="lead">A continuación se muestra un ejemplo de formulario construido completamente con los controles de formulario de Bootstrap.</p>
+    </div>
+
+    <!-- Mensajes de alerta -->
+    <div class="alert alert-danger" role="alert">
+      <strong>Error:</strong> Algunos campos obligatorios no han sido completados correctamente. Revisa los campos marcados.
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <strong>Advertencia:</strong> Tu código postal parece incorrecto, por favor verifica.
+    </div>
+    <div class="alert alert-info" role="alert">
+      <strong>Información:</strong> El campo de correo electrónico es opcional, pero te recomendamos completarlo para recibir actualizaciones.
+    </div>
+    <div class="alert alert-success" role="alert">
+      ¡Perfecto! Tu código promocional ha sido aplicado con éxito.
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Tu carrito</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Nombre del producto</h6>
+              <small class="text-muted">Breve descripción</small>
+            </div>
+            <span class="text-muted">12 €</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Segundo producto</h6>
+              <small class="text-muted">Breve descripción</small>
+            </div>
+            <span class="text-muted">8 €</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Tercer producto</h6>
+              <small class="text-muted">Breve descripción</small>
+            </div>
+            <span class="text-muted">5 €</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-success bg-opacity-10">
+            <div class="text-success">
+              <h6 class="my-0">Código promocional</h6>
+              <small>EJEMPLOCODIGO</small>
+            </div>
+            <span class="text-success">−5 €</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (EUR)</span>
+            <strong>20 €</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Código promocional">
+            <button type="submit" class="btn btn-warning">Canjear</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Dirección de Facturación</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un nombre válido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un apellido válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Nombre de usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text bg-info text-white">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+              <div class="invalid-feedback">
+                  Se requiere un nombre de usuario.
+              </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Correo electrónico <span class="text-muted">(Opcional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
+              <div class="invalid-feedback">
+                Por favor, introduce un correo electrónico válido para actualizaciones de envío.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="address" placeholder="Calle Principal 123" required>
+              <div class="invalid-feedback">
+                Por favor, introduce tu dirección de envío.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Piso o apartamento">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">País</label>
+              <select class="form-select" id="country" required>
+                <option value="">Seleccionar...</option>
+                <option>España</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecciona un país válido.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Provincia</label>
+              <select class="form-select" id="state" required>
+                <option value="">Seleccionar...</option>
+                <option>Sevilla</option>
+                <option>Madrid</option>
+                <option>Barcelona</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecciona una provincia válida.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere un código postal.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">La dirección de envío es la misma que la de facturación</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Guardar esta información para la próxima vez</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Método de pago</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tarjeta de débito</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+              <div class="invalid-feedback">
+                Se requiere el nombre en la tarjeta.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número de la tarjeta de crédito</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere el número de la tarjeta de crédito.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Fecha de caducidad</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere la fecha de caducidad.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere el código de seguridad.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-danger btn-lg" type="submit">Continuar con el pago</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este portafolio es &copy; 2024 por Keiner Hurtado. ¡Mira los proyectos!</p>
+      <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+    </div>
+  </footer>
+
+   <script type="module" src="./assets/js/main.js"></script>
+
+  </body>
+</html>

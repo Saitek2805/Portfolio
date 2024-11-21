@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>  
+    
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Portfolio de Keiner Hurtado - DAW</a>
+          <div class="d-flex"><!--boton intercambiador del tema -->
+            <button id="themeToggle" class="btn btn-outline-primary me-2">
+              <i class="bi bi-sun" id="themeIcon"></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">Inicio de sesión</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main>
+
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Portfolio de  Keiner Hurtado - DAW</h1>
+      <p class="lead text-muted">Este portafolio recopila los proyectos realizados por el alumno durante los cursos de Desarrollo de Aplicaciones Web (DAW). Aquí podrás ver los trabajos prácticos, aplicaciones desarrolladas y otros logros alcanzados durante la formación.</p>
+      <p>
+        <a href="#portfolio" class="btn btn-primary my-2">Ver Proyectos</a>
+        <a href="formulario-pago.html" class="btn btn-secondary my-2">Contrata mis servicios</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<div id="portfolio" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col">
+    <div class="card shadow-sm">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 1" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 1</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 1</text></svg>
+
+      <div class="card-body">
+        <p class="card-text">Desarrollo de una aplicación web para gestionar tareas y usuarios con roles básicos.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+          </div>
+          <small class="text-muted">Finalizado en 2024</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 2" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 2</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 2</text></svg>
+
+      <div class="card-body">
+        <p class="card-text">Creación de una web con HTML y CSS que aplica buenas prácticas de maquetación.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+          </div>
+          <small class="text-muted">Finalizado en 2023</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 3" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 3</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 3</text></svg>
+
+      <div class="card-body">
+        <p class="card-text">Aplicación web dinámica con conexión a base de datos utilizando Spring Boot y MariaDB para una gestión de inventarios.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+          </div>
+          <small class="text-muted">Finalizado en 2024</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card shadow-sm">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 4" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 4</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 4</text></svg>
+      
+      <div class="card-body">
+        <p class="card-text">Desarrollo de una API RESTful para un sistema de reservas con Spring Boot.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+          </div>
+          <small class="text-muted">Finalizado en 2024</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card shadow-sm">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 5" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 5</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 5</text></svg>
+
+      <div class="card-body">
+        <p class="card-text">Creación de una aplicación móvil híbrida con Ionic para gestionar eventos y notificaciones.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+          </div>
+          <small class="text-muted">Finalizado en 2024</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card shadow-sm">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 6" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 6</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 6</text></svg>
+
+      <div class="card-body">
+        <p class="card-text">Integración de un sistema de pagos en un e-commerce.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+          </div>
+          <small class="text-muted">Finalizado en 2024</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</main>
+
+<footer class="container-fluid text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Volver arriba</a>
+    </p>
+    <p class="mb-1">Este portafolio es &copy; 2024 por Keiner Hurtado. ¡Mira los proyectos!</p>
+    <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+  </div>
+</footer>
+
+
+  <script type="module" src="./assets/js/main.js"></script>
+
+      
+  </body>
+</html>

@@ -1,0 +1,25 @@
+// Include any default variable overrides here (though functions won't be available)
+// Importar funciones de Bootstrap que son necesarias para sobreescribir algunas variables
+@import "../node_modules/bootstrap/scss/functions";
+
+
+// Las Utils personalizadas deben estar antes de la importación de Bootstrap por si sobreescriben alguna variable, mixin o función de boostrap
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+
+
+// Importar Bootstrap después de definir los temas para sobrescribir estilos
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Then add additional custom code here
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
+
+
+// Components
+@import 'components/cards';
+@import 'components/buttons';
+// De momento no tenemos componentes
+//ya si tenemos componentes
