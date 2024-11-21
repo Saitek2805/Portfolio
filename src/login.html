@@ -56,13 +56,15 @@
   </header>
 
   <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+    <img id="imagen_inicio_sesion" src="img/Penguin_sitting.png" alt="Inicio Sesión" class="img-fluid">
     <div class="login-container">
       <!-- Image Section -->
-      <div class="text-center mb-4 mt-5"> <!-- Añadido mt-5 para espacio con el header -->
-        <img src="img/inicio sesion.png" alt="Inicio Sesión" class="img-fluid login-image">
-      </div>
+        <div class="login-image-container">
+            
+        </div>
+    
       <!-- Form Section -->
-      <div class="login-card mt-4"> <!-- Añadido mt-4 para espacio con la imagen -->
+      <div class="login-card mt-4"> <!--  espacio con la imagen -->
         <h2 class="text-center">Iniciar Sesión</h2>
         <form>
           <div class="form-floating mb-3">
@@ -76,7 +78,7 @@
             <label for="password">
               <i class="fa fa-key"></i> Contraseña
             </label>
-            <i class="fa fa-eye toggle-password" style="position: absolute; right: 15px; top: 20px; cursor: pointer;"></i>
+            <i class="fa fa-eye toggle-password" style="position: absolute; right: 15px; top: 20px; cursor: pointer;"></i><!-- boton de revelar, ahora mismo no hace nada-->
           </div>
           <a href="#" class="forgot-password">He olvidado la contraseña</a>
           <button type="submit" class="btn btn-primary w-100 mt-3">Iniciar sesión</button>
@@ -85,7 +87,7 @@
     </div>
   </main>
 
-  <footer class="container-fluid text-muted py-4 mt-5"> <!-- Añadido mt-5 para espacio con el formulario -->
+  <footer class="container-fluid text-muted py-4 mt-5"> <!-- para espacio con el formulario -->
     <div class="container">
       <p class="float-end mb-1">
         <a href="#">Volver arriba</a>
