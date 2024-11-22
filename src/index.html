@@ -35,46 +35,49 @@
     
   </head>
   <body>
-    <!-- HEADER-->
-    <header>
-      <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">Portfolio de Keiner Hurtado - DAW</a>
-          <div class="d-flex"><!--boton intercambiador del tema -->
-            <button id="themeToggle" class="btn btn-outline-primary me-2">
-              <i class="bi bi-sun" id="themeIcon"></i>
-            </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+   <!-- HEADER-->
+   <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Portfolio de Keiner Hurtado - DAW</a>
+        <div class="d-flex"><!--boton intercambiador del tema -->
+          <button id="themeToggle" class="btn btn-outline-primary me-2">
+            <i class="bi bi-sun" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/login.html">Inicio de sesión</a>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a><!--index-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a><!--formulario-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Inicio de sesión</a><!--login-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register.html">Registro</a><!--login-->
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- FIN HEADER-->
+      </div>
+    </nav>
+  </header>
+  <!-- FIN HEADER-->
 <main>
 
 <section class="py-5 text-center container">
@@ -92,106 +95,48 @@
 
 
 <div id="portfolio" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  
   <div class="col">
     <div class="card shadow-sm">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 1" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 1</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 1</text></svg>
+      <a href="hu04.html"><!-- por el enlace este los botones pueden crear fallos en el futuro-->
+        <img src="img/hu04.PNG" class="card-img-top" alt="Proyecto 1" width="100%" height="225">
+      </a>
 
-      <div class="card-body">
-        <p class="card-text">Desarrollo de una aplicación web para gestionar tareas y usuarios con roles básicos.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+          <div class="card-body">
+            <p class="card-text">HU04 Productos más vendidos por supermercado</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button  type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+              </div>
+              <small class="text-muted">Finalizado en 2024</small>
+            </div>
           </div>
-          <small class="text-muted">Finalizado en 2024</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card shadow-sm">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 2" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 2</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 2</text></svg>
-
-      <div class="card-body">
-        <p class="card-text">Creación de una web con HTML y CSS que aplica buenas prácticas de maquetación.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-          </div>
-          <small class="text-muted">Finalizado en 2023</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card shadow-sm">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 3" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 3</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 3</text></svg>
-
-      <div class="card-body">
-        <p class="card-text">Aplicación web dinámica con conexión a base de datos utilizando Spring Boot y MariaDB para una gestión de inventarios.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-          </div>
-          <small class="text-muted">Finalizado en 2024</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card shadow-sm">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 4" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 4</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 4</text></svg>
       
-      <div class="card-body">
-        <p class="card-text">Desarrollo de una API RESTful para un sistema de reservas con Spring Boot.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-          </div>
-          <small class="text-muted">Finalizado en 2024</small>
-        </div>
-      </div>
     </div>
+    
   </div>
-
+  
   <div class="col">
     <div class="card shadow-sm">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 5" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 5</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 5</text></svg>
-
-      <div class="card-body">
-        <p class="card-text">Creación de una aplicación móvil híbrida con Ionic para gestionar eventos y notificaciones.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+      <a href="hu05.html">
+        <!-- por el enlace este los botones pueden crear fallos en el futuro-->
+        <img src="img/hu05.PNG" class="card-img-top" alt="Proyecto 1" width="100%" height="225">
+      </a>
+        <div class="card-body">
+          <p class="card-text"> HU05. Buscardor del supermercado más barato de tu zona por categoria.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+            </div>
+            <small class="text-muted">Finalizado en 2023</small>
           </div>
-          <small class="text-muted">Finalizado en 2024</small>
         </div>
-      </div>
+      
     </div>
   </div>
-
-  <div class="col">
-    <div class="card shadow-sm">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Proyecto 6" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Proyecto 6</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Proyecto 6</text></svg>
-
-      <div class="card-body">
-        <p class="card-text">Integración de un sistema de pagos en un e-commerce.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-primary">Ver Proyecto</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-          </div>
-          <small class="text-muted">Finalizado en 2024</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  
 
 
 </main>

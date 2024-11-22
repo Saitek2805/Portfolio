@@ -16,11 +16,12 @@
   <link href="/assets/css/styles.css" rel="stylesheet">
 </head>
 <body class="bg-body-tertiary d-flex flex-column">
+  <!-- HEADER-->
   <header>
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Portfolio de Keiner Hurtado - DAW</a>
-        <div class="d-flex">
+        <div class="d-flex"><!--boton intercambiador del tema -->
           <button id="themeToggle" class="btn btn-outline-primary me-2">
             <i class="bi bi-sun" id="themeIcon"></i>
           </button>
@@ -36,13 +37,16 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a><!--index-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a><!--formulario-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/login.html">Inicio de sesión</a>
+                <a class="nav-link" href="/login.html">Inicio de sesión</a><!--login-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register.html">Registro</a><!--login-->
               </li>
             </ul>
             <form class="d-flex mt-3" role="search">
@@ -54,40 +58,54 @@
       </div>
     </nav>
   </header>
+  <!-- FIN HEADER-->
 
-  <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+  <main class="flex-grow-1 d-flex align-items-center justify-content-center mt-5">
     <img id="imagen_inicio_sesion" src="img/Penguin_sitting.png" alt="Inicio Sesión" class="img-fluid">
     <div class="login-container">
-      <!-- Image Section -->
-        <div class="login-image-container">
-            
-        </div>
+      
     
-      <!-- Form Section -->
-      <div class="login-card mt-4"> <!--  espacio con la imagen -->
-        <h2 class="text-center">Iniciar Sesión</h2>
-        <form>
+      <div class="login-card mt-5"> 
+        <h2 class="text-center mt-5">Iniciar Sesión</h2>
+        <form><!-- formulario inicio sesion-->
+          <!--email-->
           <div class="form-floating mb-3">
             <input type="email" class="form-control" id="email" placeholder="correo@gmail.com" required>
             <label for="email">
               <i class="fa fa-envelope"></i> Correo electrónico
             </label>
           </div>
+
+          <!-- contra-->
           <div class="form-floating mb-3">
             <input type="password" class="form-control" id="password" placeholder="contraseña" required>
             <label for="password">
               <i class="fa fa-key"></i> Contraseña
             </label>
-            <i class="fa fa-eye toggle-password" style="position: absolute; right: 15px; top: 20px; cursor: pointer;"></i><!-- boton de revelar, ahora mismo no hace nada-->
+            <i class="fa fa-eye" style="position: absolute; right: 15px; top: 20px;"></i><!-- boton de revelar, ahora mismo no hace nada-->
           </div>
+
+          <!--recodrar-->
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Recordarme</label>
+          </div>
+<!--olvido-->
           <a href="#" class="forgot-password">He olvidado la contraseña</a>
+
+          <!--inicio-->
           <button type="submit" class="btn btn-primary w-100 mt-3">Iniciar sesión</button>
+
+          <!-- registro-->
+          <div class="text-center mt-3">
+            <p>¿No tienes una cuenta todavía? <a href="/register.html" class="text-primary">Regístrate aquí</a></p>
+          </div>
         </form>
       </div>
     </div>
   </main>
-
-  <footer class="container-fluid text-muted py-4 mt-5"> <!-- para espacio con el formulario -->
+<!--el footer se puede incluir o no dependiendo de lo que quiera-->
+  <footer class="container-fluid text-muted py-4 mt-5"> 
     <div class="container">
       <p class="float-end mb-1">
         <a href="#">Volver arriba</a>

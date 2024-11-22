@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>  
+    
+  </head>
+  <body>
+   <!-- HEADER-->
+   <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Portfolio de Keiner Hurtado - DAW</a>
+        <div class="d-flex"><!--boton intercambiador del tema -->
+          <button id="themeToggle" class="btn btn-outline-primary me-2">
+            <i class="bi bi-sun" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a><!--index-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a><!--formulario-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Inicio de sesión</a><!--login-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register.html">Registro</a><!--login-->
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FIN HEADER-->
+
+
+
+
+  <main class="flex-grow-1 d-flex align-items-center justify-content-center mt-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Buscador del Supermercado más Barato por Categoría</h2>
+      
+  
+      <!-- Formulario de búsqueda -->
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="categoria" class="form-label">Selecciona una categoría</label>
+          <select class="form-select" id="categoria" required>
+            <option value="" disabled selected>Elige una categoría</option>
+            <option value="frutas">Frutas</option>
+            <option value="vegetales">Vegetales</option>
+            <option value="lacteos">Lácteos</option>
+            <option value="panaderia">Panadería</option>
+            <option value="bebidas">Bebidas</option>
+          </select>
+        </div>
+        
+        <div class="col-md-6">
+          <label for="zona" class="form-label">Introduce tu zona</label>
+          <input type="text" class="form-control" id="zona" placeholder="Castilleja de la Cuesta" required>
+        </div>
+  
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary w-100">Buscar Supermercado</button>
+        </div>
+      </form>
+  
+      <!-- Resultados -->
+      <div id="resultados" class="mt-5">
+        <h3 class="text-center mb-3">Supermercados más baratos</h3>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="d-flex justify-content-center">
+                    <img src="img/mercadona.png" class="card-img-top w-50" alt="mercadona">
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">Mercadona</h5>
+                <p class="card-text">Ubicación: Calle 123, Castilleja de la cuesta</p>
+                <span class="text-success">Precio medio: €15.60</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="d-flex justify-content-center">
+                    <img src="img/lidl.png" class="card-img-top w-50" alt="lidle 1">
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">Lidl</h5>
+                <p class="card-text">Ubicación: Calle 123, Castilleja de la cuesta</p>
+                <span class="text-success">Precio medio: €14.80</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="d-flex justify-content-center">
+                    <img src="img/aldi.png" class="card-img-top w-100" alt="Supermercado 3">
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">Aldi</h5>
+                <p class="card-text">Ubicación: Calle 123, Castilleja de la cuesta </p>
+                <span class="text-success">Precio medio: €16.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+
+
+<!--el fin-->
+   <footer class="container-fluid text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este portafolio es &copy; 2024 por Keiner Hurtado. ¡Mira los proyectos!</p>
+      <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+    </div>
+  </footer>
+  
+  
+    <script type="module" src="./assets/js/main.js"></script>
+  
+        
+    </body>
+  </html>
+  
