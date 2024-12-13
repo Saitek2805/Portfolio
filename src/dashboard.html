@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+   <!-- HEADER-->
+   <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Portfolio de Keiner Hurtado - DAW</a>
+        <div class="d-flex"><!--boton intercambiador del tema -->
+          <button id="themeToggle" class="btn btn-outline-primary me-2">
+            <i class="bi bi-sun" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a><!--index-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a><!--formulario-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Inicio de sesión</a><!--login-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register.html">Registro</a><!--login-->
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FIN HEADER-->
+
+
+
+
+  <main class="container mt-5">
+    <div class="row">
+        <!-- Gráfica 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="productosPorCategoria" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- Gráfica 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="rankingSupermercados" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Gráfica 3 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="gastoMensualPorCategoria" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- Gráfica 4 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="ticketsPorDia" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<!--el fin-->
+   <footer class="container-fluid text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este portafolio es &copy; 2024 por Keiner Hurtado. ¡Mira los proyectos!</p>
+      <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+    </div>
+  </footer>
+  
+  
+    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/dashboard.js"></script>
+    
+        
+    </body>
+  </html>
+  
