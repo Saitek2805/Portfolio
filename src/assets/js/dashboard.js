@@ -31,7 +31,7 @@ const ctx2 = document.getElementById('rankingSupermercados').getContext('2d');
 new Chart(ctx2, {
     type: 'pie',
     data: {
-        labels: ['Supermercado A', 'Supermercado B', 'Supermercado C', 'Supermercado D'],
+        labels: ['Mercadona', 'ALDI', 'LIDL', 'MAS'],
         datasets: [{
             label: 'Gasto (€)',
             data: [250, 400, 300, 150], // Datos simulados
