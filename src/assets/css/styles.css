@@ -24,46 +24,40 @@
     height: 400px; /* Ajusta el alto a la imagen */
     object-fit: cover;
   }
+/* Estilos para centrar el texto */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Inicialmente invisible */
+  animation: fadeInUp 1s ease forwards; /* Animación por defecto */
+}
 
-  /* Estilo para el contenedor del texto */
-  .carousel-caption {
-    position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para centrar completamente */
-    text-align: center; /* Centra el texto */
-    color: white; /* Color del texto */
-    font-size: 2rem; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para hacerlo más visible */
-    padding: 10px; /* Añade un poco de espacio alrededor */
-    width: 100%; /* Asegura que el texto ocupe todo el ancho */
-    box-sizing: border-box;
-  }
+/* Añadir retrasos específicos para cada slide */
+.carousel-item:nth-child(1) .carousel-caption {
+  animation-delay: 0s;
+}
 
-  /* Animación para el desplazamiento suave del texto */
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -50%) translateY(20px); /* Empuja el texto desde abajo */
-    }
-    100% {
-      opacity: 1;
-      transform: translate(-50%, -50%) translateY(0); /* Deja el texto en su posición final */
-    }
-  }
+.carousel-item:nth-child(2) .carousel-caption {
+  animation-delay: 0.5s;
+}
 
-  /* Estilos para cada imagen y texto */
-  .carousel-item:nth-child(1) .carousel-caption {
-    animation-delay: 0s;
-  }
+.carousel-item:nth-child(3) .carousel-caption {
+  animation-delay: 1s;
+}
 
-  .carousel-item:nth-child(2) .carousel-caption {
-    animation-delay: 0.5s;
+/* Animación personalizada */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 20px)); /* Comienza más abajo */
   }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Posición final */
+  }
+}
 
-  .carousel-item:nth-child(3) .carousel-caption {
-    animation-delay: 1s;
-  }
 
  
